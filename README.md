@@ -1,4 +1,7 @@
 # Nostrlivery
+
+![logo](./nostrlivery_logo.svg)
+
 Decentralized delivery application that uses Nostr and Bitcoin
 
 **Three mobile apps:**
