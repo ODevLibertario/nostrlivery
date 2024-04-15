@@ -70,7 +70,7 @@ The second path is a timelock that returns the full amount of money to the clien
 **How to contribute**
 - Join the telegram group: [https://t.me/+qgoN80-CulQyNGYx](https://t.me/+qgoN80-CulQyNGYx)
 - Ask @odevlibertario to join the repo you want to contribute on
-- Check the [Tasks](./Tasks.md) for pending taks you can start
+- Check the [Tasks](./Tasks.md) for pending tasks you can start
 - Open a pull request to master with your code, refer to which task you are implementing
 
 **How to contribute financially**
