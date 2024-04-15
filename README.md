@@ -14,6 +14,7 @@ Decentralized delivery application that uses Nostr and Bitcoin
 The backend is a special nostr relay that knows how to speak the apps protocol. Should be able to be plugged in to any nostr relay. Initially there will be one dedicated relay for reference.
 
 **The company app allows for:**
+- Choice of nostrlivery node
 - Login
 - Registration of a new company
 - Associating with drivers to the company
@@ -22,6 +23,7 @@ The backend is a special nostr relay that knows how to speak the apps protocol. 
 - Checking delivery history
 
 **The driver app allows for:**
+- Choice of nostrlivery node
 - Login
 - Registration
 - Accepting associations to companies
@@ -32,6 +34,7 @@ The backend is a special nostr relay that knows how to speak the apps protocol. 
 - Checking delivery history
 
 **The consumer app allows for:**
+- Choice of nostrlivery node
 - Login
 - Registration 
 - Browsing near companies
@@ -40,15 +43,17 @@ The backend is a special nostr relay that knows how to speak the apps protocol. 
 - Rating company 
 - Rating driver
 
-**The relay backend:**
-- Stores all data
+**The backend node:**
+- Manages nostr event communication with the nostr network
+- Stores data as nostr events
 - Serves as a payment mediator during an order
+- The node is not a nostr relay, it is a nostr entity with nsec and npub that talks to nostr relays
 
 **How does payment work:**
 
 The consumer picks their order and based on the distance from the company receives an invoice to pay.
 
-When he pays the invoice, the money gets stored into the relay's wallet and it behaves like an htlc that splits the payment into two branches, the first splits the payment into three parts: the payment for the company, the payment to the driver, and the payment to the relay, but that path is only unlocked if given a passcode that the client has and will only give once he received the goods. Once given the passcode, the relay will zap the company and the driver their sats and keep a small percentage to cover computing costs.
+When he pays the invoice, the money gets stored into the node's wallet and it behaves like an htlc that splits the payment into two branches, the first splits the payment into three parts: the payment for the company, the payment to the driver, and the payment to the node, but that path is only unlocked if given a passcode that the client has and will only give once he received the goods. Once given the passcode, the node will zap the company and the driver their sats and keep a small percentage to cover computing costs.
 
 The second path is a timelock that returns the full amount of money to the client as a fallback after a set amount of time if the delivery didn't happen.
 
@@ -61,3 +66,13 @@ The second path is a timelock that returns the full amount of money to the clien
 **Problems:**
 - You need to trust the store you are buying from since their reputation is on the line, so small unknown stores would very hardly be trusted.
 - There are many possible attack vectors here to spam the system, and bot reviews but we can add rules to the system to avoid most of these.
+
+**How to contribute**
+- Join the telegram group: [https://t.me/+qgoN80-CulQyNGYx](https://t.me/+qgoN80-CulQyNGYx)
+- Ask @odevlibertario to join the repo you want to contribute on
+- Check the [Tasks](./Tasks.md) for pending taks you can start
+- Open a pull request to master with your code, refer to which task you are implementing
+
+**How to contribute financially**
+- Make a donation to @odevlibertario at: freshdriver32@walletofsatoshi.com
+- The money will used to support the developers of the project and offer bounties
