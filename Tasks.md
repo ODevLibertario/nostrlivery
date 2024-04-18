@@ -1,6 +1,6 @@
 ## Roadmap
 
-- T1:select-nostrlivery-node [pending]  
+- T1:select-nostrlivery-node [started] by ODevLibertario 
 Before login allow the user to input a nostrlivery-node URL and send, when you call an endpoint on that URL that is a GET url/identity the server will return an npub. Store this url and the npub in the apps memory. If those fields are not present in the memory then always return to this set node screen.<br><br>
 If on calling the endpoint the call fails or doesn't return a valid npub show the user an error, if it succeeds redirect to the login page (this could be on the login page, this hide login and show this instead).<br><br>
 The nostrlivery-node should on startup receive two env variables for nsec and npub so it can make the identity endpoint work and also sign events back to the client.
