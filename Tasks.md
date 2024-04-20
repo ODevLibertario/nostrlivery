@@ -9,7 +9,7 @@ The nostrlivery-node should on startup receive two env variables for nsec and np
 This depends on T1 being completed, on every response from the node besides the identity endpoint
 return a signed nostr event and make sure the apps verify every response with the npub they have in memory from when their selected the node.
 
-- T1.2:nostrlivery-change-node [pending]  
+- T1.2:nostrlivery-change-node [done] by rainanDeveloper  
 Allow for the user in the profile screen to set another nostrlivery node to use and also show the URL of the current node being used
 
 - T2:set-company-location [pending]  
