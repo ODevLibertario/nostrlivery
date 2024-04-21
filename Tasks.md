@@ -12,7 +12,7 @@ return a signed nostr event and make sure the apps verify every response with th
 - T1.2:nostrlivery-change-node [done] by rainanDeveloper  
 Allow for the user in the profile screen to set another nostrlivery node to use and also show the URL of the current node being used
 
-- T2:set-company-location [started] by ODevLibertario  
+- T2:set-company-location [done] by ODevLibertario  
 When the user is logged in, in the company app. Allow if to go to the profile tab and set his company location, the simples way is to add to fields to the screen that ask for latitude and longitude, of course this is not user friendly so we could also add a field that receives a google maps location URL and parses that to extract longitude and longitude.<br><br>
 Once the user sends his location to the server, update his profile event k0 with no tags to add the following object {"location":{"latitude": 123, "longitude": 123}}.<br><br>
 Also allow for the user to update his location at anytime
