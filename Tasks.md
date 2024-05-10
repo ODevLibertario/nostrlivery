@@ -17,8 +17,10 @@ When the user is logged in, in the company app. Allow if to go to the profile ta
 Once the user sends his location to the server, update his profile event k0 with no tags to add the following object {"location":{"latitude": 123, "longitude": 123}}.<br><br>
 Also allow for the user to update his location at anytime
 
-- T3:configure-menu [started]  by ODevLibertario  
+- T3:configure-menu [done]  by ODevLibertario  
 Allow a logged in company user to setup his company menu, it should be a crud of menu items,
 each item having a picture(this is low priority on this task if it's too difficult), a name, a description, a price and a category (do we need more fields?).<br><br>
 The user will configure his menu on the app and then when he presses save a JSON object of the menu will be sent to the node as a nostr event kind 30000 with the d tag with the value menu.<br><br>
 The user should be able to edit his menu at any time
+
+All further tasks will be registered as issues on the code repositories.
