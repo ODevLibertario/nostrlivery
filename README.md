@@ -6,7 +6,7 @@ Decentralized delivery application that uses Nostr and Bitcoin
 
 **Three mobile apps:**
 - **Company - https://github.com/ODevLibertario/nostrlivery-company**
-- **Driver - Not started**
+- **Driver - https://github.com/ODevLibertario/nostrlivery-driver**
 - **Consumer - Not started**
 
 **A nostr relay as backend - https://github.com/ODevLibertario/nostrlivery-node**
